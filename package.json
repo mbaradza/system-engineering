@@ -1,0 +1,17 @@
+{
+  "name": "code-pipeline",
+  "version": "1.0.0",
+  "description": "MSU CODE PIPELINE",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "winston": "^3.5.1",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "author": "Morris Baradza"
+}
