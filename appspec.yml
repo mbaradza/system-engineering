@@ -6,16 +6,16 @@ files:
 
 hooks:
    ApplicationStop:
-      - location: /home/ubuntu/scripts/app-stop.sh
+      - location: /scripts/app-stop.sh
         timeout: 10
         runas: ubuntu
 
    AfterInstall:
-      - location: /home/ubuntu/scripts/install-pkgs.sh
+      - location: /scripts/install-pkgs.sh
         timeout: 1200
         runas: ubuntu
 
    ApplicationStart:
-      - location: /home/ubuntu/scripts/app-start.sh
+      - location: /scripts/app-start.sh
         timeout: 60
         runas: ubuntu

@@ -1,0 +1,3 @@
+#!/bin/bash  
+echo Stopping Backend App...
+pm2 stop server

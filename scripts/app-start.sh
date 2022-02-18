@@ -1,0 +1,3 @@
+#!/bin/bash  
+echo Starting Backend App...
+pm2 start server
