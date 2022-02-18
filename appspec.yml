@@ -1,27 +1,27 @@
 version: 0.0
 os: linux
 files:
-- source: /
- destination: /home/ubuntu/system-engineering
+   - source: /
+     destination: /home/ubuntu/system-engineering
 
 permissions:
 - object: /
-   pattern: "**"
-   owner: ubuntu
-   group: ubuntu
+      pattern: "**"
+      owner: ubuntu
+      group: ubuntu
 
 hooks:
-ApplicationStop:
-   - location: /home/ubuntu/scripts/app-stop.sh
-     timeout: 10
-     runas: ubuntu
+   ApplicationStop:
+      - location: /home/ubuntu/scripts/app-stop.sh
+        timeout: 10
+        runas: ubuntu
 
-AfterInstall:
-   - location: /home/ubuntu/scripts/install-pkgs.sh
-     timeout: 1200
-     runas: ubuntu
+   AfterInstall:
+      - location: /home/ubuntu/scripts/install-pkgs.sh
+        timeout: 1200
+        runas: ubuntu
 
-ApplicationStart:
-   - location: /home/ubuntu/scripts/app-start.sh
-     timeout: 60
-     runas: ubuntu
+   ApplicationStart:
+      - location: /home/ubuntu/scripts/app-start.sh
+        timeout: 60
+        runas: ubuntu
