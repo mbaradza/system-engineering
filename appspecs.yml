@@ -12,16 +12,16 @@ permissions:
 
 hooks:
 ApplicationStop:
-   - location: /home/scripts/app-stop.sh
+   - location: /home/ubuntu/scripts/app-stop.sh
      timeout: 10
      runas: ubuntu
 
 AfterInstall:
-   - location: /home/scripts/install-pkgs.sh
+   - location: /home/ubuntu/scripts/install-pkgs.sh
      timeout: 1200
      runas: ubuntu
 
 ApplicationStart:
-   - location: /home/scripts/app-start.sh
+   - location: /home/ubuntu/scripts/app-start.sh
      timeout: 60
      runas: ubuntu
