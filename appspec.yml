@@ -4,12 +4,6 @@ files:
    - source: /
      destination: /home/ubuntu/system-engineering
 
-permissions:
-- object: /
-      pattern: "**"
-      owner: ubuntu
-      group: ubuntu
-
 hooks:
    ApplicationStop:
       - location: /home/ubuntu/scripts/app-stop.sh
