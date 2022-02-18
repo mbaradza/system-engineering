@@ -17,11 +17,11 @@ ApplicationStop:
      runas: ubuntu
 
 AfterInstall:
-   - location: /home/scripts/install-pkgs
+   - location: /home/scripts/install-pkgs.sh
      timeout: 1200
      runas: ubuntu
 
 ApplicationStart:
    - location: /home/scripts/app-start.sh
      timeout: 60
-     runas: ec2-user
+     runas: ubuntu
