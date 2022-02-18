@@ -14,8 +14,8 @@ const logger = createLogger({
     defaultMeta: { service: 'msu-pipeline' },
     transports: [
 
-    new transports.File({ filename: '/var/log/msu-pipeline/error.log', level: 'error',maxsize: 500000 }),
-    new transports.File({ filename: '/var/log//msu-pipeline/combined.log', maxsize: 500000 }),
+    new transports.File({ filename: '/home/ubuntu/error.log', level: 'error',maxsize: 500000 }),
+    new transports.File({ filename: '/home/ubuntu/combined.log', maxsize: 500000 }),
   ],
 });
 
