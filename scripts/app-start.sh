@@ -1,3 +1,4 @@
 #!/bin/bash  
 echo Starting Backend App...
-pm2 start server
+cd /home/system-engineering
+pm2 start server.js
