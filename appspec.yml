@@ -4,18 +4,18 @@ files:
    - source: /
      destination: /home/ubuntu/system-engineering
 
-hooks:
-   ApplicationStop:
-      - location: /scripts/app-stop.sh
-        timeout: 10
-        runas: ubuntu
+# hooks:
+#    ApplicationStop:
+#       - location: /scripts/app-stop.sh
+#         timeout: 10
+#         runas: ubuntu
 
-   AfterInstall:
-      - location: /scripts/install-pkgs.sh
-        timeout: 1200
-        runas: ubuntu
+#    AfterInstall:
+#       - location: /scripts/install-pkgs.sh
+#         timeout: 1200
+#         runas: ubuntu
 
-   ApplicationStart:
-      - location: /scripts/app-start.sh
-        timeout: 60
-        runas: ubuntu
+#    ApplicationStart:
+#       - location: /scripts/app-start.sh
+#         timeout: 60
+#         runas: ubuntu
