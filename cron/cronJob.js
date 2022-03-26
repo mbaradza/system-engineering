@@ -4,7 +4,7 @@ const logger = require("../logger")
 
 function sendChangeAlert() {
 cron.schedule('*/1 * * * *', () => {
-  logger.info(" I HAVE CHANGED OOOOOOH OOOH!!!")
+  logger.info(" I AM STILL FRESH!!!")
 }, {
   scheduled: true,
   timezone: "Africa/Harare"
